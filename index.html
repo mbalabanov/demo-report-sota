@@ -1,135 +1,557 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>State of the Art | Marin Comics</title>
+    <link
+      rel="stylesheet"
+      href="https://marincomics.com/css/bootstrap.min.css"
+    />
+
+    <meta
+      name="description"
+      content="State of the Art was a groundbreaking Amiga demo created by the Norwegian demogroup Spaceballs, released in 1992. This demo gained widespread acclaim for its innovative use of real-time 2D vector graphics, animation, and sound, becoming an iconic piece in the history of the demoscene."
+    />
+    <meta
+      name="keywords"
+      content="Commodore Amiga, demoscene, Spaceballs, State of the Art"
+    />
+    <meta name="author" content="Marin Balabanov" />
+
+    <style>
+      .video-container {
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+      }
+
+      .video-container::after {
+        padding-top: 56.25%;
+        display: block;
+        content: "";
+      }
+
+      .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
   </head>
+
   <body>
-    <h1>State of the Art by Spaceballs</h1>
+    <nav
+      class="d-flex flex-wrap justify-content-center p-3 bg-primary bg-gradient text-light"
+    >
+      <a
+        href="https://marincomics.com"
+        class="d-flex align-items-center mb-md-1 me-md-auto text-dark text-decoration-none"
+      >
+        <img
+          src="https://marincomics.com/img/marincomics-logo.png"
+          alt="Marin Comics"
+          height="50px"
+        />
+      </a>
 
-    <p>Video Capture: https://youtu.be/89wq5EoXy-0</p>
-    <p>Duration: 4 Minutes 12 Seconds</p>
-    <p>Code: Lone Starr, Major Asshole</p>
-    <p>Music: Travolta</p>
-    <p>Graphics: Tmb Design</p>
-    <p>Released at: The Party in 1992</p>
-    <p>Demo Group Infos: https://demozoo.org/groups/3/</p>
+      <ul class="nav nav-pills me-4">
+        <li class="nav-item">
+          <a
+            href="https://marincomics.com/index.html#writing"
+            class="nav-link link-light"
+            >Writing</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            href="https://marincomics.com/index.html#dev-projects"
+            class="nav-link link-light"
+            >Dev-Projects</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            href="https://marincomics.com/index.html#videos"
+            class="nav-link link-light"
+            >Videos</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            href="https://marincomics.com/index.html#comics"
+            class="nav-link link-light"
+            >Comics</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            href="https://marincomics.com/about.html"
+            class="nav-link link-light"
+            >About</a
+          >
+        </li>
+      </ul>
+    </nav>
 
-    <p>
-      "State of the Art" is a groundbreaking Amiga demo created by the Norwegian
-      demogroup Spaceballs, released in 1992. This demo gained widespread
-      acclaim for its innovative use of real-time 2D vector graphics, animation,
-      and sound, becoming an iconic piece in the history of the demoscene.
-    </p>
-    <p>
-      The demo features a minimalistic black and white design, which creates a
-      striking visual impact. It is composed of multiple scenes that showcase
-      the technical prowess of a regular Amiga 500 and the artistic capabilities
-      of Spaceballs. It was small enough to be saved on a single 880Kb floppy
-      disk. "State of the Art'' won first place at the "The Party" in 1992.
-    </p>
-    <p>Let's take a closer look at the details of "State of the Art".</p>
+    <main class="bg-light">
+      <section class="py-5 container">
+        <div class="row">
+          <div class="col-md-8 offset-md-2">
+            <h1 class="mt-4 text-secondary">
+              The Demo that Transformed the Amiga into MTV
+            </h1>
+            <h2 class="mt-4">
+              History and Analysis of State of the Art by Spaceballs
+            </h2>
 
-    <h2>Demo Description</h2>
+            <p class="lead">
+              Let's take a detailed look at "State of the Art". A groundbreaking
+              demo for the Commodore Amiga created by the Norwegian demogroup
+              Spaceballs, released in 1992. This demo gained widespread acclaim
+              for its innovative use of real-time 2D vector graphics, animation,
+              and sound, becoming an iconic piece in the history of the Amiga
+              demoscene.
+            </p>
 
-    <h3>Introduction</h3>
-    <p>
-      The demo starts with the Spaceballs logo, followed by the title "State of
-      the Art" appearing on the screen. The text is presented in a stylized,
-      futuristic font that sets the tone for the rest of the demo.
-    </p>
+            <h3>Achtung: Spaceballs-Website</h3>
+            <p>https://spaceballs.untergrund.net/</p>
+            <p>
+              Und hier ist die Geschichte der Demogruppe:
+              https://spaceballs.untergrund.net/history.html
+            </p>
+            <p>Und den Namen "Spaceballs" auch erklären: Film von Mel Brooks</p>
 
-    <h3>Dancers</h3>
-    <p>
-      The first main scene features silhouettes of dancers in various poses. The
-      dancers are represented by 2D vector graphics, with their movements being
-      smoothly animated. The animation is synchronized to the electronic music
-      track, creating an immersive audiovisual experience.
-    </p>
+            <img
+              src="img/spaceballs-website.png"
+              alt="Spaceballs Website"
+              class="img-fluid"
+            />
 
-    <h3>Rotating Objects</h3>
-    <p>
-      This scene showcases rotating 2D objects, such as stars and triangles. The
-      objects morph and change shape as they rotate, demonstrating the
-      capabilities of the Amiga's graphics hardware.
-    </p>
+            <h3>
+              Achtung: Text aus einer archivierten Fassung von "It's Art
+              Magazine"
+            </h3>
 
-    <h3>Spiraling Patterns</h3>
-    <p>
-      In this scene, the demo displays spiraling patterns that continuously
-      morph and change shape. These intricate patterns are rendered in real-time
-      and are synchronized with the pulsating electronic soundtrack, providing a
-      mesmerizing visual experience.
-    </p>
+            <p>
+              In 1992, a group named the Spaceballs accomplished State of The
+              Art, a demo(nstration) introduced in Party2. This demo of almost
+              four minutes, able to start from a simple density disk, was a
+              major revolution in the art of the demo. For the first time,
+              somebody had succeeded to prove that it was possible to accomplish
+              a video-clip comparable to professional productions, but on a
+              simple personal computer.
+            </p>
 
-    <h3>Waveform Visualizer</h3>
-    <p>
-      The demo features a waveform visualizer that responds to the beats and
-      frequencies of the music track. The waveforms are rendered as white lines
-      on a black background, creating a mesmerizing, dynamic effect that adds
-      another layer of depth to the audiovisual experience.
-    </p>
+            <p>
+              It is necessary to remind you of the significance of demo word in
+              this context, which strictly has nothing to do with the word used
+              when speaking about a restricted or evaluated version to a
+              commercial software. The art of demo, such as introduced here, is
+              the capacity to make a real-time calculated program which links
+              visual effects and original music. The art of the demo is a way of
+              demonstrating a programmer, musician, or else graphic designer
+              skills in a same unit of time.
+            </p>
 
-    <h3>Wireframe Cityscape</h3>
-    <p>
-      A 3D wireframe cityscape is presented, with buildings and structures
-      appearing to be drawn in real-time. This showcases the Amiga's ability to
-      render complex 3D scenes.
-    </p>
+            <p>
+              In 1992, Amiga ruled the demo scene, but State Of The Art caused a
+              true earthquake in the demos group community and all its fans.
+              While most part of demos introduced technical parts trying to put
+              forward feats of programming which could be annoying for the
+              non-initiating, State of The Art erased the programming aspect to
+              accomplish a visual assemblage worthy of the best dance video
+              clips from this time ...
+            </p>
 
-    <h3>Kaleidoscope</h3>
-    <p>
-      This scene features a kaleidoscope effect, with the screen filled with an
-      ever-changing array of symmetrical patterns. The patterns react to the
-      music, creating a hypnotic and synchronized audiovisual experience.
-    </p>
+            <div class="alert alert-primary">
+              <h2 class="mt-4">Profile</h2>
+              <p>
+                <strong>Platform:</strong> Commodore Amiga 500<br />
 
-    <h3>Dancers Reprise</h3>
-    <p>
-      The dancers from the earlier scene return, this time with new poses and
-      animations. Their movements continue to be synchronized to the music,
-      further emphasizing the tight integration of visual and auditory elements
-      in the demo.
-    </p>
+                <strong>Video Capture:</strong>
+                <a href="https://youtu.be/89wq5EoXy-0" target="_blank"
+                  >https://youtu.be/89wq5EoXy-0</a
+                >
+                <br />
+                <strong>Duration:</strong> 4 Minutes 12 Seconds<br />
+                <strong>Code:</strong> Lone Starr, Major Asshole<br />
+                <strong>Music:</strong> Travolta<br />
+                <strong>Graphics:</strong> Tmb Design<br />
+                <strong>Released at:</strong> "The Party" in 1992<br />
+                <strong>Demo Group Infos:</strong>
+                <a href="https://demozoo.org/groups/3/" target="_blank"
+                  >https://demozoo.org/groups/3/</a
+                >
+              </p>
+            </div>
 
-    <h3>Credits and Greetings</h3>
-    <p>
-      The demo concludes with a credits sequence, acknowledging the individuals
-      responsible for the creation of "State of the Art." The names of the group
-      members and their roles are presented in a stylish font, accompanied by
-      greetings to other demoscene groups and individuals.
-    </p>
+            <div class="video-container my-4">
+              <iframe
+                src="https://www.youtube.com/embed/89wq5EoXy-0"
+                frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
 
-    <h2>Creating the Demo</h2>
-    <p>
-      The longest section in "Stage of the Art" shows the silhouettes of the
-      female dancers gyrating to the pounding music. The footage was recreated
-      as vector graphics by the members of Spaceballs, who had to manually trace
-      the shapes for each frame of their demo. A tedious process described in
-      "Demoscene: The Amiga Years, Volume 1 1984 - 1993" by Éditions 64K:
-    </p>
-    <p>
-      "We started to work on the demo for numerous hours, spanning several
-      months. Major Asshole manually drew all the animations by hand, Lone Starr
-      created a specific piece of drawing software for that project. We then
-      used a genlock to display a fixed video image in the background. However,
-      as the sync signal was too bad for the genlock, I used the camera to film
-      the TV set that showed the fixed images to the VHS recorder."
-    </p>
+            <p class="text-center">
+              <em
+                >A video capture of the "State of the Art" demo in all its
+                glory.</em
+              >
+            </p>
 
-    <p>
-      A year later, Spaceballs released another impressive demo called "9
-      Fingers". This time they asked two of their female friends to dance and
-      filmed them with a video camera. The original footage of the dancing
-      ladies in "9 Fingers" can still be found in the Youtube documentary "Two
-      Women that changed the Amiga Demo scene" https://youtu.be/QZ6419ZuVaE.
-    </p>
+            <p>
+              When the audience at the demoparty "The Party" in 1992 saw the
+              "State of the Art" demo on the Commodore Amiga, they were blown
+              away. It looked like a freaky, avantgarde music video that would
+              not have been out of place on MTV. The Norwegian demogroup
+              Spaceballs combined real-time 2D vector graphics, animation, and
+              sound in their demo.
+            </p>
+            <p>
+              The demo features a minimalistic black and white design, which
+              creates a striking visual impact. It is composed of multiple
+              scenes that showcase the technical prowess of a regular Amiga 500
+              and the artistic capabilities of Spaceballs. It was small enough
+              to be saved on a single 880Kb floppy disk. "State of the Art'' won
+              first place at the "The Party" in 1992.
+            </p>
 
-    <h2>Demo Reviews</h2>
+            <h2 class="mt-4">Demo Analysis</h2>
 
-    <p>Pouet.net</p>
-    <p>Demozoo.org</p>
-    <p>R.A.W Reviews</p>
+            <p>
+              Let's take a closer look at the details of "State of the Art".
+            </p>
+
+            <img
+              src="img/sota-image01.png"
+              alt="Overview of State of the Art"
+              class="img-fluid"
+            />
+
+            <h3 class="mt-2">1. Demo Intro</h3>
+            <p>
+              The demo starts with the Spaceballs logo, followed by the title
+              "State of the Art" appearing on the screen. The text is presented
+              in a stylized, futuristic font that sets the tone for the rest of
+              the demo.
+            </p>
+
+            <img
+              src="img/sota-image02.png"
+              alt="Intro of the demo"
+              class="img-fluid"
+            />
+
+            <h3 class="mt-2">2. Dancing Silhouettes</h3>
+            <p>
+              The first main scene features silhouettes of dancers in various
+              poses. The dancers are represented by 2D vector graphics, with
+              their movements being smoothly animated. The animation is
+              synchronized to the electronic music track, creating an immersive
+              audiovisual experience.
+            </p>
+
+            <img
+              src="img/sota-image03.png"
+              alt="The Silhouettes of Dancers"
+              class="img-fluid"
+            />
+
+            <h3 class="mt-2">3. Rotating Objects</h3>
+            <p>
+              This scene showcases rotating 2D objects, such as stars and
+              triangles. The objects morph and change shape as they rotate,
+              demonstrating the capabilities of the Amiga's graphics hardware.
+            </p>
+
+            <img
+              src="img/sota-image04.png"
+              alt="Triangles, circles and stars rotating"
+              class="img-fluid"
+            />
+
+            <h3 class="mt-2">4. Spiraling Patterns</h3>
+            <p>
+              In this scene, the demo displays spiraling patterns that
+              continuously morph and change shape. These intricate patterns are
+              rendered in real-time and are synchronized with the pulsating
+              electronic soundtrack, providing a mesmerizing visual experience.
+            </p>
+
+            <img
+              src="img/sota-image05.png"
+              alt="Patterns spiraling across the dancing silhouettes"
+              class="img-fluid"
+            />
+
+            <h3 class="mt-2">5. Waveform Visualizer</h3>
+            <p>
+              The demo features a waveform visualizer that responds to the beats
+              and frequencies of the music track. The waveforms are rendered as
+              white lines on a black background, creating a mesmerizing, dynamic
+              effect that adds another layer of depth to the audiovisual
+              experience.
+            </p>
+
+            <img
+              src="img/sota-image06.png"
+              alt="The dancing silhouettes get distorted by the waveform visualizer"
+              class="img-fluid"
+            />
+
+            <h3 class="mt-2">6. Wireframe Cityscape</h3>
+            <p>
+              A 3D wireframe cityscape is presented, with buildings and
+              structures appearing to be drawn in real-time. This showcases the
+              Amiga's ability to render complex 3D scenes.
+            </p>
+
+            <img
+              src="img/sota-image07.png"
+              alt="Vector cityscapes drawn in real-time"
+              class="img-fluid"
+            />
+
+            <h3 class="mt-2">7. Kaleidoscope</h3>
+            <p>
+              This scene features a kaleidoscope effect, with the screen filled
+              with an ever-changing array of symmetrical patterns. The patterns
+              react to the music, creating a hypnotic and synchronized
+              audiovisual experience.
+            </p>
+
+            <img
+              src="img/sota-image08.png"
+              alt="The dancing silhouettes in a kaleidoscope of glitch effects"
+              class="img-fluid"
+            />
+
+            <h3 class="mt-2">8. Dancers Reprise as Oulines</h3>
+            <p>
+              The dancers from the earlier scene return, this time with new
+              poses and animations. Their movements continue to be synchronized
+              to the music, further emphasizing the tight integration of visual
+              and auditory elements in the demo.
+            </p>
+
+            <img
+              src="img/sota-image09.png"
+              alt="The dancers are transformed into outlines over a light gradient"
+              class="img-fluid"
+            />
+
+            <h3 class="mt-2">9. Credits and Greetings</h3>
+            <p>
+              The demo concludes with a credits sequence, acknowledging the
+              individuals responsible for the creation of "State of the Art."
+              The names of the group members and their roles are presented in a
+              stylish font, accompanied by greetings to other demoscene groups
+              and individuals.
+            </p>
+
+            <p>
+              The original version of "State of the Art" that was released at
+              the demoparty only ran on an Amiga 500. It crashed on an Amiga
+              1000 and 1200. So weeks after the release, a demoscener called
+              Skidrow debugged and corrected the demo to make it run on other
+              models of the Amiga.
+            </p>
+
+            <p>The good Stuff was no longer locked away in the future</p>
+
+            <img
+              src="img/sota-image10.png"
+              alt="The finale with the credits and greetings"
+              class="img-fluid"
+            />
+
+            <h2 class="mt-4">Demo Reviews</h2>
+
+            <p>
+              When the demo was released, it turned many heads. But there was
+              also criticism. Let's explore the reviews at the time and the ones
+              written decades later.
+            </p>
+
+            <img
+              src="img/raw-sota-reviews.jpg"
+              alt="The reviews of the demo in the R.A.W. diskmag"
+              class="img-fluid"
+            />
+
+            <h4>Zeque:</h4>
+            <p>
+              Now this is a design-demo. Basically only one routine, a lot of
+              2D-coordinates and a groovy tune. Still a very good demo, though
+              it does get a bit boring and repetitive towards the end. A big
+              minus for not working with my A1000 for this one, too.
+            </p>
+
+            <h4>Chaos:</h4>
+            <p>
+              Why does he demos? He should get himself a videocamera and make
+              music videos NOTHING is realtime in this prod, (exept some simple
+              transformations, he told me). If you like it, watch MTV, you will
+              get something better.
+            </p>
+            <p>
+              There is perhaps one way of defending this demo. He just wanted to
+              do something like a techno video, and he did, but it has nothing
+              to do with a scene that i want to be part of. If he likes doing
+              teckno videos, he should stop using amiga and start using video.
+              He will get better results with less work. He could as well use a
+              table tennis ball to play soccer. It's possible, but stupid
+              (except for some silly situations).
+            </p>
+
+            <p>
+              I don't have to say something about compatibility, Skid Row said
+              everything that has to be said about this subject....
+            </p>
+
+            <p>
+              If this is the state of the art, I should start looking for
+              another scene.
+            </p>
+
+            <p>
+              By the way, if you think that it is a new idea to use the shadow
+              of dancers in a demo, then take a look at the Deformations demo
+              from Deform, It was released at a copy party in Warschau/Poland in
+              spring '92 and won the competition. Musashi (the coder) combined
+              the animation with real code, and using a nice music sample he
+              gained a much better effect. Well, who is interested in polnish
+              demos...
+            </p>
+
+            <p>Graphics: one nice small piccy</p>
+            <p>Sound: Techno sucks.</p>
+            <p>Design: Flashy Techno shit</p>
+            <p>Effects: none</p>
+            <p>Overall: Dpaint Animation. I prefer Tobias Richter.</p>
+
+            <p>Tobias Richter's Amiga work</p>
+            <p>https://youtu.be/puspJ1qOkgg?si=TnrJi0XmFH8wje7_</p>
+
+            <p>Pouet.net</p>
+            <p>Demozoo.org</p>
+            <p>R.A.W Reviews</p>
+
+            <h2 class="mt-4">Creating the Demo</h2>
+
+            <p>
+              Let's take a look at the demo's history, which starts in the past,
+              because the demo was created in the summer of 1992.
+            </p>
+            <p>
+              The longest section in "Stage of the Art" shows the silhouettes of
+              the female dancers gyrating to the pounding music. The footage was
+              recreated as vector graphics by the members of Spaceballs, who had
+              to manually trace the shapes for each frame of their demo. A
+              tedious process described in "Demoscene: The Amiga Years, Volume 1
+              1984 - 1993" by Éditions 64K:
+            </p>
+            <p>
+              "We started to work on the demo for numerous hours, spanning
+              several months. Major Asshole manually drew all the animations by
+              hand, Lone Starr created a specific piece of drawing software for
+              that project. We then used a genlock to display a fixed video
+              image in the background. However, as the sync signal was too bad
+              for the genlock, I used the camera to film the TV set that showed
+              the fixed images to the VHS recorder."
+            </p>
+
+            <img
+              src="img/raw-sota-mo.jpg"
+              alt="Screenshots of the R.A.W. diskmag that describes the creation of the demo"
+              class="img-fluid"
+            />
+
+            <img
+              src="img/raw-sota-dancer.jpg"
+              alt="An introduction of the dancer whose footage was used in the demo, again a screenshot from the R.A.W. diskmag"
+              class="img-fluid"
+            />
+
+            <img
+              src="img/captured-dancers.png"
+              alt="Stills from the captured footage of the dancers"
+              class="img-fluid"
+            />
+
+            <p>
+              A year later, Spaceballs released another impressive demo called
+              "9 Fingers". This time they asked two of their female friends to
+              dance and filmed them with a video camera. The original footage of
+              the dancing ladies in "9 Fingers" can still be found in the
+              Youtube documentary "Two Women that changed the Amiga Demo scene"
+              https://youtu.be/QZ6419ZuVaE.
+            </p>
+
+            <div class="video-container my-4">
+              <iframe
+                src="https://www.youtube.com/embed/QZ6419ZuVaE"
+                frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+
+            <p class="text-center">
+              <em
+                >The documentary "Two Women that changed the Amiga Demo scene"
+                on Youtube</em
+              >
+            </p>
+
+            <h2>A Possible Source of Inspiration</h2>
+            <p>
+              Another similar demo on the Amiga called "Deformations" was
+              released in the spring of the same year at the Polish demoparty
+              Warszawa 1992 and was awarded first place. It has a very different
+              nature but also features silhouettes of dancers to sampled music
+              with vocals. ( https://youtu.be/yN3JkL6nhKU?si=6prljJ0ZWVJSHPIh )
+            </p>
+
+            <h3>Footnote</h3>
+            <p>
+              Genlock is short for "generator locking," a technique used in
+              video production and broadcasting to synchronize the Amiga with
+              multiple video sources, such as cameras or video recorders, with a
+              common reference signal. The genlock signal, also known as a
+              reference signal or sync signal, is used to ensure that all video
+              sources are synchronized to the same frame rate, phase, and color
+              timing.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-black text-muted p-5 row">
+      <div class="col-md-6 text-center">
+        <p class="mb-1">
+          Showcase of side projects, videos and writing about comics, computer
+          history and development.
+        </p>
+      </div>
+      <div class="col-md-3 text-center">
+        <p class="mb-1">
+          <a href="#" class="btn btn-sm btn-outline-secondary">Back to top</a>
+        </p>
+      </div>
+      <div class="col-md-3 text-center">
+        <p class="mb-1">
+          <a href="privacy-policy.html" class="btn btn-sm btn-outline-light"
+            >Privacy Policy</a
+          >
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
